@@ -24,5 +24,13 @@ export TESLAAPRS_REFRESH_TOKEN=$(bashio::config 'refresh_token')
 if [[ "$TESLAAPRS_REFRESH_TOKEN" = "null" ]]; then
     TESLAAPRS_REFRESH_TOKEN=
 fi
+export TESLAAPRS_APRS_SYMBOL_TABLE_CHAR=$(bashio::config 'aprs_symbol_table_char')
+if [[ "$TESLAAPRS_APRS_SYMBOL_TABLE_CHAR" = "null" ]]; then
+    TESLAAPRS_APRS_SYMBOL_TABLE_CHAR=
+fi
+export TESLAAPRS_APRS_SYMBOL_CODE_CHAR=$(bashio::config 'aprs_symbol_code_char')
+if [[ "$TESLAAPRS_APRS_SYMBOL_CODE_CHAR" = "null" ]]; then
+    TESLAAPRS_APRS_SYMBOL_CODE_CHAR=
+fi
 
 python3 -u /tesla-aprs/main.py
