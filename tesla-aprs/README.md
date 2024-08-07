@@ -13,4 +13,6 @@ This addon runs the [tesla-aprs](https://github.com/nonoo/tesla-aprs) app.
   with suffix (for example: AB1CDE-12)
 - `message`: APRS message
 - `interval_sec`: Seconds between vehicle location uploads
-- `vehicle_nr`: number of the vehicle if you have multiple Teslas
+- `vehicle_nr`: Number of the vehicle if you have multiple Teslas
+- `aprs_symbol_table_char`: Use the specified APRS symbol table
+- `aprs_symbol_code_char`: Use the specified APRS symbol from the table
