@@ -1,7 +1,7 @@
 name: "Tesla APRS"
 description: "Sends Tesla vehicle location and status to the APRS-IS"
 url: https://github.com/nonoo/ha-addons/tree/main/tesla-aprs
-version: "1.0.1"
+version: "1.0.2"
 slug: "tesla_aprs"
 init: false
 arch:
